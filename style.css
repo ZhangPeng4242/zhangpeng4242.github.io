@@ -4,7 +4,7 @@
   initial-value: 0;
 }
 :root {
-  --labs-sys-color-background: #111;
+  --labs-sys-color-background: #000;
   --labs-sys-color-on-background: white;
   --base-speed: 4s;
   --labs-sys-color-grid: #fac4ff;
@@ -30,7 +30,7 @@
   -webkit-animation: delorean 30s ease infinite;
           animation: delorean 30s ease infinite;
   perspective: 1000px;
-  scale: 80%;
+  scale: 70%;
 }
 
 @-webkit-keyframes delorean {
@@ -218,8 +218,7 @@
   overflow: hidden;
   left: 0;
   z-index: -1;
-  -webkit-animation: stars 20s linear;
-          animation: stars 20s linear;
+  -webkit-animation: stars 12s linear infinite;
 }
 #stars .star {
   position: absolute;
@@ -232,25 +231,25 @@
 }
 
 @-webkit-keyframes stars {
-  from {
+  0% {
     transform: translateX(0);
   }
   60% {
-    transform: translateX(3vmax) rotate(1deg);
+    transform: translateX(4vmax) rotate(1deg);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }
 
 @keyframes stars {
-  from {
+  0% {
     transform: translateX(0);
   }
   60% {
     transform: translateX(3vmax) rotate(1deg);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }

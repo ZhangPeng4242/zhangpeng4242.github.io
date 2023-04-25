@@ -24,4 +24,4 @@ const render = () => {
   }
 };
 
-window.addEventListener("resize", () => requestAnimationFrame(render));
+window.addEventListener("load", () => requestAnimationFrame(render));
