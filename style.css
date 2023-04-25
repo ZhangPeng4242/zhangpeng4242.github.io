@@ -6,7 +6,7 @@
 :root {
   --labs-sys-color-background: #000;
   --labs-sys-color-on-background: white;
-  --base-speed: 4s;
+  --base-speed: 5s;
   --labs-sys-color-grid: #fac4ff;
   --labs-sys-color-grid-glow: #df7373;
   --labs-sys-color-sun-1: #fdb428;
@@ -21,7 +21,7 @@
 
 .delorean {
   position: absolute;
-  bottom: 2rem;
+  bottom: 5VH;
   z-index: 11111;
   right: 0;
   left: 0;
@@ -162,21 +162,21 @@
 }
 
 .bottom-overlay {
-  perspective: 14.5rem;
-  flex: 0 0 12.5rem;
+  perspective: 22VH;
+  flex: 0 0 24VH;
   position: absolute;
   z-index: 10000;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 12.5rem;
+  height: 24VH;
   background: radial-gradient(ellipse at center, transparent 50%, rgba(30, 30, 30, 0.9) 70%);
 }
 
 .bottom {
   background: inherit;
-  perspective: 14.5rem;
-  flex: 0 0 12.5rem;
+  perspective: 22VH;
+  flex: 0 0 24VH;
   position: relative;
 }
 .bottom:before {
@@ -218,7 +218,7 @@
   overflow: hidden;
   left: 0;
   z-index: -1;
-  -webkit-animation: stars 12s linear infinite;
+  -webkit-animation: stars 11s linear infinite;
 }
 #stars .star {
   position: absolute;
